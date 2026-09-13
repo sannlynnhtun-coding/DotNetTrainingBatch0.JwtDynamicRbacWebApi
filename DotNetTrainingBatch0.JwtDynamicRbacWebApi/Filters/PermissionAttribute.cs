@@ -31,6 +31,7 @@ public class PermissionFilter : IAsyncAuthorizationFilter
     {
         bool hasPermission = false;
 
+
         if (_checkFromDb)
         {
             var userIdString = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
